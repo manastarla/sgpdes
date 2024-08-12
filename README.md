@@ -61,7 +61,7 @@ pool = pool_gen.generate_pool(X_train, y_train)
 
 ## Contribution
 
-If you wish to contribute to the development of `spgdeslib`, follow these steps:
+If you wish to contribute to the development of `spgdes`, follow these steps:
 
 1. Fork the repository.
 2. Create a new branch for your changes.
