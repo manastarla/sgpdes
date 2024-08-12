@@ -1,8 +1,8 @@
 
-# spgdeslib
+# spgdes
 
 ## Description
-The `spgdeslib` is a Python library that implements the Self-generating Prototype Dynamic Selection Ensemble (SGPDES) algorithm. This package provides functionalities for creating and training a dynamic ensemble of classifiers with self-generating prototype selection.
+The `spgdes` is a Python library that implements the Self-generating Prototype Dynamic Selection Ensemble (SGPDES) and HSGP algorithms. This package provides functionalities for creating and training a dynamic ensemble of classifiers with self-generating prototype selection.
 
 ## Installation
 
@@ -22,7 +22,7 @@ python --version
    To install the package directly from GitHub, you can use the following `pip` command:
 
    ```bash
-   pip install --force-reinstall --no-cache-dir git+https://github.com/manastarla/spgdeslib.git
+   pip install --force-reinstall --no-cache-dir git+https://github.com/manastarla/spgdes.git
    ```
 
    This command ensures that the repository is cloned again and that no cached version is used.
@@ -32,12 +32,12 @@ python --version
    If you are using Google Colab, you can run the command above in a code cell:
 
    ```python
-   !pip install --force-reinstall --no-cache-dir git+https://github.com/manastarla/spgdeslib.git
+   !pip install --force-reinstall --no-cache-dir git+https://github.com/manastarla/spgdes.git
    ```
 
 ## Usage
 
-After installation, you can import and use `spgdeslib` in your Python projects. Here is a basic example of how to use the package:
+After installation, you can import and use `spgdes` in your Python projects. Here is a basic example of how to use the package:
 
 ### Example Usage
 
