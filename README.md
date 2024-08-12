@@ -6,7 +6,7 @@ The `spgdes` is a Python library that implements the Self-generating Prototype D
 
 ## Installation
 
-To install `spgdeslib` directly from the GitHub repository, follow the instructions below:
+To install `spgdes` directly from the GitHub repository, follow the instructions below:
 
 ### Requirements
 Ensure you have Python 3.6 or higher installed in your environment. You can check the Python version using the following command:
@@ -42,7 +42,7 @@ After installation, you can import and use `spgdes` in your Python projects. Her
 ### Example Usage
 
 ```python
-# Import the necessary class from the spgdeslib package
+# Import the necessary class from the spgdes package
 from spgdes.poolgenerator import PoolGenerator
 
 # Example usage of the PoolGenerator class
