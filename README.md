@@ -169,8 +169,8 @@ for dataset in datasets:
 results_df = pd.DataFrame(all_results)
 #results_df.to_csv("results.csv", index=False)
 
-print(results_df)
-```
+print("results_df")
+````
 
 ## Contribution
 
@@ -188,3 +188,38 @@ This project is licensed under the MIT License. See the LICENSE file for more in
 ## Contact
 
 For any questions or issues, please open an issue in the GitHub repository or contact the author at manastarla@hotmail.com.
+
+## Usage of HSGP
+
+You can use the `HSGP` function from the `ps.hsgp` module to perform prototype selection. Below is an example of how to use the `HSGP` function with the Breast Cancer dataset:
+
+```python
+from ps.hsgp import HSGP
+import numpy as np
+from sklearn.datasets import load_breast_cancer
+
+# Load a sample dataset (Breast Cancer Dataset)
+data = load_breast_cancer()
+X = data.data
+y = data.target
+
+# Combine the features and target into a single array for the HSGP algorithm
+TR = np.column_stack((X, y))
+
+# Define the parameters for the HSGP algorithm
+WMA = 3  # Window Moving Average
+ESD = 0.001  # Entropy Standard Deviation
+EL = 0.1  # Entropy Level for instance selection
+KI = 1  # Number of nearest neighbors
+max_iter = 1000  # Maximum number of iterations
+
+# Run the HSGP algorithm
+R, accuracy_TR, accuracy_R, reduction_rate, sma_values, sma_values_rep, average_entropies, sd_values, S_Geral, num_prototypes, prototypes = HSGP(TR, WMA, ESD, EL, KI, max_iter)
+
+# Output the results
+print(f"Original Training Accuracy: {accuracy_TR:.2f}%")
+print(f"Reduced Training Accuracy: {accuracy_R:.2f}%")
+print(f"Reduction Rate: {100-reduction_rate:.2f}%")
+```
+
+This example demonstrates how to load a dataset, configure the HSGP algorithm, and then execute it to obtain prototypes and evaluate the reduction in training data size.
