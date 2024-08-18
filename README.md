@@ -36,13 +36,6 @@ python --version
    !pip install git+https://github.com/manastarla/sgpdes.git
    ```
 
-3. **Install DESlib for DES method comparison**
-
-   To install `DESlib` for comparison with the DES methods:
-
-   ```python
-   !pip install git+https://github.com/scikit-learn-contrib/DESlib
-   ```
 
 ## Usage
 
@@ -203,23 +196,19 @@ print(f"Reduction Rate: {100-reduction_rate:.2f}%")
 This example demonstrates how to load a dataset, configure the HSGP algorithm, and then execute it to obtain prototypes and evaluate the reduction in training data size.
 
 
-## Contribution
+## Citation
 
-If you wish to contribute to the development of `spgdes`, follow these steps:
+If you use SGP.DES in a scientific paper, please consider citing the following paper:
 
-1. Fork the repository.
-2. Create a new branch for your changes.
-3. Commit your changes.
-4. Submit a pull request for review.
+Manastarla, Alberto, and Silva, Leandro A. "Enhancing dynamic ensemble selection: combining self-generating prototypes and meta-classifier for data classification." Neural Computing and Applications (2024). Springer.
 
-## License
+```bibtex
+@article{manastarla2024enhancing,
+  title={Enhancing dynamic ensemble selection: combining self-generating prototypes and meta-classifier for data classification},
+  author={Manastarla, Alberto and Silva, Leandro A},
+  journal={Neural Computing and Applications},
+  pages={1--26},
+  year={2024},
+  publisher={Springer}
+}
 
-This project is licensed under the MIT License. See the LICENSE file for more information.
-
-## Contact
-
-For any questions or issues, please open an issue in the GitHub repository or contact the author at manastarla@hotmail.com.
-
-
-
-This example demonstrates how to load a dataset, configure the HSGP algorithm, and then execute it to obtain prototypes and evaluate the reduction in training data size.
