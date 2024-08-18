@@ -167,9 +167,9 @@ for dataset in datasets:
 
 # Save results to CSV
 results_df = pd.DataFrame(all_results)
-results_df.to_csv("results.csv", index=False)
+#results_df.to_csv("results.csv", index=False)
 
-print("Results saved in results.csv")
+print(results_df)
 ```
 
 ## Contribution
