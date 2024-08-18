@@ -10,8 +10,8 @@ setup(
         'scikit-learn',
         'matplotlib',
         'xgboost',
-        'scipy',
-        'pickle-mixin'   # Asegure-se que esta é a biblioteca correta para funcionalidades pickle
+        'scipy'
+        #'pickle-mixin'   # Asegure-se que esta é a biblioteca correta para funcionalidades pickle
     ],
     python_requires='>=3.10',
     author='Alberto Manastarla',

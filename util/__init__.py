@@ -1,8 +1,6 @@
 """A Python library for Dynamic Ensemble Selection.
 
-``SGPDESlib`` is a library containing the implementation of the state-of-the art
-dynamic classifier and ensemble selection techniques. The library also provides
-some static ensemble methods that are used as baseline comparison.
+``SGPDES`` is a library that implements the SGPDES technique and prototype selection methods used to create an optimized DSEL set for use during the dynamic selection process of SGPDES.
 
 Subpackages
 -----------
