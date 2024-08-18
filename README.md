@@ -57,8 +57,7 @@ from sgpdes.spgdes import SGPDES
 # Perceptron PoolGenerator
 from util.poolgenerator import PoolGenerator
 
-# DES techniques from DESlib
-from deslib.des import KNORAE, KNORAU, DESP, METADES
+
 import warnings
 import requests
 import zipfile
@@ -143,10 +142,6 @@ def process_dataset(dataset, methods):
 
 # Dictionary of methods for dynamic instantiation
 methods = {
-    "METADES": lambda pool: METADES(pool),
-    "KNORAE": lambda pool: KNORAE(pool),
-    "KNORAU": lambda pool: KNORAU(pool),
-    "DESP": lambda pool: DESP(pool),
     "SGPDES KNN": lambda pool: SGPDES(WMA=25, ESD=0.001, EL=0.9, KI=1, pool_classifiers=pool, DESNumbNN=7, Selector_Mode="MODELBASEDKNN", CONSENSUSTH=101, resultprint=False),
     "SGPDES RF": lambda pool: SGPDES(WMA=25, ESD=0.001, EL=0.9, KI=1, pool_classifiers=pool, DESNumbNN=7, Selector_Mode="MODELBASEDRF", CONSENSUSTH=101, resultprint=False),
     "SGPDES SVM": lambda pool: SGPDES(WMA=25, ESD=0.001, EL=0.9, KI=1, pool_classifiers=pool, DESNumbNN=7, Selector_Mode="MODELBASEDSVM", CONSENSUSTH=101, resultprint=False),
