@@ -1,5 +1,5 @@
 
-# spgdes
+# SGP.DES
 
 ## Description
 The `spgdes` is a Python library that implements the Self-generating Prototype Dynamic Selection Ensemble (SGPDES) and HSGP algorithms. This package provides functionalities for creating and training a dynamic ensemble of classifiers with self-generating prototype selection.
