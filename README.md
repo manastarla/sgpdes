@@ -200,7 +200,7 @@ This example demonstrates how to load a dataset, configure the HSGP algorithm, a
 
 If you use SGP.DES in a scientific paper, please consider citing the following paper:
 
-Manastarla, Alberto, and Silva, Leandro A. "Enhancing dynamic ensemble selection: combining self-generating prototypes and meta-classifier for data classification." Neural Computing and Applications (2024). Springer.
+Manastarla, Alberto, and Silva, Leandro A. "Enhancing dynamic ensemble selection: combining self-generating prototypes and meta-classifier for data classification." Neural Computing and Applications (2024). Springer. DOI: [10.1007/s00521-024-10237-8](https://doi.org/10.1007/s00521-024-10237-8).
 
 ```bibtex
 @article{manastarla2024sgpdes,
@@ -209,6 +209,9 @@ Manastarla, Alberto, and Silva, Leandro A. "Enhancing dynamic ensemble selection
   journal={Neural Computing and Applications},
   pages={1--26},
   year={2024},
-  publisher={Springer}
+  publisher={Springer},
+  doi={10.1007/s00521-024-10237-8},
+  url={https://doi.org/10.1007/s00521-024-10237-8}
 }
+
 
