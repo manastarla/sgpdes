@@ -1,8 +1,12 @@
 
-# SGP.DES
+## Self-Generating Prototype Dynamic Ensemble Selection (SGPDES):
 
-## Description
-The `spgdes` is a Python library that implements the Self-generating Prototype Dynamic Selection Ensemble (SGPDES) and HSGP algorithms. This package provides functionalities for creating and training a dynamic ensemble of classifiers with self-generating prototype selection.
+SGPDES is an advanced technique within the Dynamic Ensemble Selection (DES) framework. SGPDES enhances traditional DES methods by incorporating prototype generation, where a reduced set of representative prototypes is dynamically created from the original training data. These prototypes form the Dynamic Selection Ensemble Set (DSEL), which is crucial for the dynamic selection of classifiers during the prediction phase.
+
+In SGPDES, the competence of each classifier in the pool is assessed using both the original dataset and the self-generated prototypes that constitute the DSEL. This dual evaluation allows the system to focus on the most relevant and noise-free instances, improving the accuracy of the classifier selection process. By leveraging meta-learning, SGPDES supports multiple classification algorithms and utilizes meta-features derived from the prototypes to enhance the selection of the most appropriate classifiers for each specific test sample.
+
+A key advantage of SGPDES is its ability to maintain the original data distribution while reducing the dataset size and removing noisy data, leading to more accurate and stable predictions. The DSEL, composed of these carefully selected prototypes, enables more precise competence estimation, particularly when dealing with small-sized and imbalanced datasets, where traditional DES methods might struggle. Empirical studies have demonstrated that SGPDES can outperform state-of-the-art DES techniques and other ensemble methods, making it a powerful tool in the field of Multiple Classifier Systems (MCS).
+
 
 ## Installation
 
