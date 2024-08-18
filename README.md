@@ -172,24 +172,7 @@ results_df = pd.DataFrame(all_results)
 print("results_df")
 ````
 
-## Contribution
-
-If you wish to contribute to the development of `spgdes`, follow these steps:
-
-1. Fork the repository.
-2. Create a new branch for your changes.
-3. Commit your changes.
-4. Submit a pull request for review.
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for more information.
-
-## Contact
-
-For any questions or issues, please open an issue in the GitHub repository or contact the author at manastarla@hotmail.com.
-
-## Usage of HSGP
+## Usage of HSGP (Prototype Selection Implemented in SGPDES)
 
 You can use the `HSGP` function from the `ps.hsgp` module to perform prototype selection. Below is an example of how to use the `HSGP` function with the Breast Cancer dataset:
 
@@ -221,5 +204,27 @@ print(f"Original Training Accuracy: {accuracy_TR:.2f}%")
 print(f"Reduced Training Accuracy: {accuracy_R:.2f}%")
 print(f"Reduction Rate: {100-reduction_rate:.2f}%")
 ```
+
+This example demonstrates how to load a dataset, configure the HSGP algorithm, and then execute it to obtain prototypes and evaluate the reduction in training data size.
+
+
+## Contribution
+
+If you wish to contribute to the development of `spgdes`, follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your changes.
+3. Commit your changes.
+4. Submit a pull request for review.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for more information.
+
+## Contact
+
+For any questions or issues, please open an issue in the GitHub repository or contact the author at manastarla@hotmail.com.
+
+
 
 This example demonstrates how to load a dataset, configure the HSGP algorithm, and then execute it to obtain prototypes and evaluate the reduction in training data size.
