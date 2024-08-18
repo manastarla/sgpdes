@@ -203,7 +203,7 @@ If you use SGP.DES in a scientific paper, please consider citing the following p
 Manastarla, Alberto, and Silva, Leandro A. "Enhancing dynamic ensemble selection: combining self-generating prototypes and meta-classifier for data classification." Neural Computing and Applications (2024). Springer.
 
 ```bibtex
-@article{manastarla2024enhancing,
+@article{manastarla2024sgpdes,
   title={Enhancing dynamic ensemble selection: combining self-generating prototypes and meta-classifier for data classification},
   author={Manastarla, Alberto and Silva, Leandro A},
   journal={Neural Computing and Applications},
