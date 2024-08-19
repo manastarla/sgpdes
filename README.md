@@ -35,7 +35,7 @@ python --version
 
 2. **Installation in Google Colab**
 
-   If you are using Google Colab, you can run the command above in a code cell:
+   If you are using Google Colab, you can run the command below in a code cell:
 
    ```python
    # If you want to install a specific branch, you can do that as well
