@@ -166,7 +166,7 @@ results_df = pd.DataFrame(all_results)
 print(results_df)
 ````
 
-## Usage of HSGP (Prototype Selection Implemented in SGPDES)
+## Usage of Hierarchical Growth Self-Generating Prototype (HSGP) - Prototype selection technique implemented in SGPDES
 
 You can use the `HSGP` function from the `ps.hsgp` module to perform prototype selection. Below is an example of how to use the `HSGP` function with the Breast Cancer dataset:
 
