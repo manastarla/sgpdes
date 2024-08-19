@@ -6,7 +6,7 @@ Subpackages
 -----------
 
 ps
-    The implementation of the A-SGPE techniques.
+    The implementation of the A-SGPE technique.
 
 """
 
