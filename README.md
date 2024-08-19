@@ -163,7 +163,7 @@ for dataset in datasets:
 results_df = pd.DataFrame(all_results)
 #results_df.to_csv("results.csv", index=False)
 
-print("results_df")
+print(results_df)
 ````
 
 ## Usage of HSGP (Prototype Selection Implemented in SGPDES)
