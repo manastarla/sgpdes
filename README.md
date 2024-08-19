@@ -166,9 +166,9 @@ results_df = pd.DataFrame(all_results)
 print(results_df)
 ````
 
-## Usage of Hierarchical Growth Self-Generating Prototype (HSGP) - Prototype selection technique implemented in SGPDES
+## Usage of Adaptative Self-Generating Prototype Entropy (A-SGPE) - Prototype selection technique implemented in SGPDES
 
-You can use the `HSGP` function from the `ps.hsgp` module to perform prototype selection. Below is an example of how to use the `HSGP` function with the Breast Cancer dataset:
+You can use the `A-SGPE` function from the `ps.hsgp` module to perform prototype selection. Below is an example of how to use the `A-SGPE` function with the Breast Cancer dataset:
 
 ```python
 from ps.hsgp import HSGP
@@ -180,17 +180,17 @@ data = load_breast_cancer()
 X = data.data
 y = data.target
 
-# Combine the features and target into a single array for the HSGP algorithm
+# Combine the features and target into a single array for the A-SGPE algorithm
 TR = np.column_stack((X, y))
 
-# Define the parameters for the HSGP algorithm
+# Define the parameters for the A-SGPE algorithm
 WMA = 3  # Window Moving Average
 ESD = 0.001  # Entropy Standard Deviation
 EL = 0.1  # Entropy Level for instance selection
 KI = 1  # Number of nearest neighbors
 max_iter = 1000  # Maximum number of iterations
 
-# Run the HSGP algorithm
+# Run the A-SGPE algorithm
 R, accuracy_TR, accuracy_R, reduction_rate, sma_values, sma_values_rep, average_entropies, sd_values, S_Geral, num_prototypes, prototypes = HSGP(TR, WMA, ESD, EL, KI, max_iter)
 
 # Output the results
@@ -199,7 +199,7 @@ print(f"Reduced Training Accuracy: {accuracy_R:.2f}%")
 print(f"Reduction Rate: {100-reduction_rate:.2f}%")
 ```
 
-This example demonstrates how to load a dataset, configure the HSGP algorithm, and then execute it to obtain prototypes and evaluate the reduction in training data size.
+This example demonstrates how to load a dataset, configure the A-SGPE algorithm, and then execute it to obtain prototypes and evaluate the reduction in training data size.
 
 
 ## Citation
