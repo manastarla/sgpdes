@@ -3,7 +3,7 @@
 
 SGPDES is an advanced technique within the realm of Dynamic Ensemble Selection (DES) methods. It enhances traditional DES approaches by incorporating prototype generation, where a reduced set of representative prototypes is dynamically created from the original training data. These prototypes form the Dynamic Selection Ensemble Set (DSEL), which is crucial for the dynamic selection of classifiers during the prediction phase.
 
-In SGPDES, the competence of each classifier in the pool is assessed using both the original dataset and the self-generated prototypes that constitute the DSEL. This dual evaluation allows the system to focus on the most relevant and noise-free instances, thereby improving the accuracy of the classifier selection process. By leveraging meta-learning, SGPDES supports multiple classification algorithms and utilizes meta-features derived from the prototypes to enhance the selection of the most appropriate classifiers for each specific test sample.
+In SGPDES, the competence of each classifier in the pool is assessed using the self-generated prototypes that constitute the DSEL. This evaluation allows the system to focus on the most relevant and noise-free instances, thereby improving the accuracy of the classifier selection process. By leveraging meta-learning, SGPDES supports multiple classification algorithms and utilizes meta-features derived from the prototypes to enhance the selection of the most appropriate classifiers for each specific test sample.
 
 A key advantage of SGPDES is its ability to maintain the original data distribution while reducing the dataset size and removing noisy data, leading to more accurate and stable predictions. The DSEL, composed of these carefully selected prototypes, enables more precise competence estimation, particularly when dealing with small-sized and imbalanced datasets, where traditional DES methods might struggle. Empirical studies have demonstrated that SGPDES can outperform state-of-the-art DES techniques and other ensemble methods, making it a powerful tool in the field of Multiple Classifier Systems (MCS).
 
@@ -35,7 +35,7 @@ python --version
 
 2. **Installation in Google Colab**
 
-   If you are using Google Colab, you can run the command above in a code cell:
+   If you are using Google Colab, you can run the command below in a code cell:
 
    ```python
    # If you want to install a specific branch, you can do that as well
@@ -163,12 +163,12 @@ for dataset in datasets:
 results_df = pd.DataFrame(all_results)
 #results_df.to_csv("results.csv", index=False)
 
-print("results_df")
+print(results_df)
 ````
 
-## Usage of HSGP (Prototype Selection Implemented in SGPDES)
+## Usage of Adaptative Self-Generating Prototype Entropy (A-SGPE) - Prototype selection technique implemented in SGPDES
 
-You can use the `HSGP` function from the `ps.hsgp` module to perform prototype selection. Below is an example of how to use the `HSGP` function with the Breast Cancer dataset:
+You can use the `A-SGPE` function from the `ps.hsgp` module to perform prototype selection. Below is an example of how to use the `A-SGPE` function with the Breast Cancer dataset:
 
 ```python
 from ps.hsgp import HSGP
@@ -180,17 +180,17 @@ data = load_breast_cancer()
 X = data.data
 y = data.target
 
-# Combine the features and target into a single array for the HSGP algorithm
+# Combine the features and target into a single array for the A-SGPE algorithm
 TR = np.column_stack((X, y))
 
-# Define the parameters for the HSGP algorithm
+# Define the parameters for the A-SGPE algorithm
 WMA = 3  # Window Moving Average
 ESD = 0.001  # Entropy Standard Deviation
 EL = 0.1  # Entropy Level for instance selection
 KI = 1  # Number of nearest neighbors
 max_iter = 1000  # Maximum number of iterations
 
-# Run the HSGP algorithm
+# Run the A-SGPE algorithm
 R, accuracy_TR, accuracy_R, reduction_rate, sma_values, sma_values_rep, average_entropies, sd_values, S_Geral, num_prototypes, prototypes = HSGP(TR, WMA, ESD, EL, KI, max_iter)
 
 # Output the results
@@ -199,7 +199,7 @@ print(f"Reduced Training Accuracy: {accuracy_R:.2f}%")
 print(f"Reduction Rate: {100-reduction_rate:.2f}%")
 ```
 
-This example demonstrates how to load a dataset, configure the HSGP algorithm, and then execute it to obtain prototypes and evaluate the reduction in training data size.
+This example demonstrates how to load a dataset, configure the A-SGPE algorithm, and then execute it to obtain prototypes and evaluate the reduction in training data size.
 
 
 ## Citation
